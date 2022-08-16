@@ -1,0 +1,165 @@
+/*
+
+--- 01 TYPOGRAPHY SYSTEM
+
+SPACING SYSTEM (px)
+
+
+
+*/
+
+:root {
+    --primary-background-button: navy;
+    --dark-gray: #333;
+    --primary-color: #e67e22;
+    --tints-color: #fdf2e9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+    font-size: 2rem;
+}
+
+/*typography*/
+h1 {
+    font-size: 5.2rem;
+    color: var(--dark-gray);
+    font-weight: 700;
+    letter-spacing: -.5px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    margin-bottom: 3.2rem;
+}
+
+p {
+    margin-bottom: 4.8rem;
+}
+
+
+/*container*/
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*grid*/
+
+.grid {
+    display: grid;
+}
+
+.grid--2x1 {
+    grid-template-columns: 1fr 1fr;
+}
+
+/*button*/
+
+.btn:link,
+.btn:visited {
+    padding: 2rem 4rem;
+    display: inline-block;
+    border-radius: 100px;
+    font-weight: 600;
+}
+
+.btn--full {
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: all .3s;
+
+
+
+}
+
+.btn--outline {
+    background-color: #fff;
+    transition: all .3s;
+
+
+}
+
+.btn--full:hover {
+    background-color: #cf711f;
+}
+
+.btn--outline:hover {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 3px #fff;
+
+}
+
+/*link*/
+
+a {
+    text-decoration: none;
+}
+
+
+/*Hero Section*/
+
+.hero__img {
+    width: 100%;
+}
+
+.hero {
+    gap: 9.6rem;
+}
+
+.hero__description {
+    line-height: 1.2;
+}
+
+.hero__text__box {
+    align-self: center;
+}
+
+.section-hero {
+    background-color: var(--tints-color);
+    padding: 9.6rem 2rem;
+}
+
+.section-hero .margin__right {
+    margin-right: 2rem;
+}
+
+.meal__delivered {
+    display: flex;
+    margin-top: 3rem;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.customer__pics img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: -15px;
+    border: 2px solid #fff;
+}
+
+
+.customer__pics img:last-child {
+    margin: 0;
+
+}
+
+.deliverd__text span {
+    color: #cf711f;
+    font-weight: 800;
+}
