@@ -2,7 +2,16 @@
 
 --- 01 TYPOGRAPHY SYSTEM
 
-SPACING SYSTEM (px)
+Line height in paragraph
+-Default 1.6
+
+Link font size
+-Default 1.8rem
+
+Link font weight
+-- 600
+
+
 
 
 
@@ -25,7 +34,6 @@ html {
 
 body {
     font-family: sans-serif;
-    line-height: 1;
     font-weight: 400;
     color: #555;
     font-size: 2rem;
@@ -34,9 +42,15 @@ body {
 /*typography*/
 h1 {
     font-size: 5.2rem;
-    color: var(--dark-gray);
-    font-weight: 700;
-    letter-spacing: -.5px;
+
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+
+h3 {
+    font-size: 3.2rem;
 }
 
 h1,
@@ -44,6 +58,9 @@ h2,
 h3 {
     margin: 0;
     margin-bottom: 3.2rem;
+    color: var(--dark-gray);
+    font-weight: 700;
+    letter-spacing: -.5px;
 }
 
 p {
@@ -55,6 +72,7 @@ p {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 /*grid*/
@@ -103,10 +121,29 @@ p {
 
 }
 
+/*list*/
+
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
 /*link*/
 
 a {
     text-decoration: none;
+    font-size: 1.8rem;
+
+}
+
+/*grid*/
+
+.grid {
+    display: grid;
+}
+
+.grid--1x2 {
+    grid-template-columns: 1fr 1fr;
 }
 
 
@@ -121,7 +158,7 @@ a {
 }
 
 .hero__description {
-    line-height: 1.2;
+    line-height: 1.6;
 }
 
 .hero__text__box {
@@ -162,4 +199,117 @@ a {
 .deliverd__text span {
     color: #cf711f;
     font-weight: 800;
+}
+
+/*Header*/
+
+.header {
+    padding: 6rem 2rem;
+    background-color: var(--tints-color);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+.logo {
+    height: 30px;
+}
+
+.nav .list {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+    color: #333;
+    font-weight: 600;
+    transition: all .3s;
+
+}
+
+.nav__link:hover,
+.nav__link:active {
+    color: #cf711f;
+}
+
+/*section-how*/
+
+.step__image {
+    width: 35%;
+}
+
+.section-how .subheading {
+    color: #cf711f;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.steps .step__box:nth-child(even) .step__image__box {
+    order: -1;
+}
+
+.step__number {
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #ddd;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
+
+
+
+.step__image__box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.step__box {
+    align-items: center;
+
+}
+
+.steps {
+    margin-top: 8rem;
+}
+
+.steps.grid {
+    gap: 5rem;
+}
+
+.step__image__box::after,
+.step__image__box::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+
+}
+
+
+.step__image__box::before {
+    background-color: #fae5d3;
+    width: 60%;
+    padding-bottom: 60%;
+    z-index: -2;
+
+}
+
+.step__image__box::after {
+    background-color: #f8d8bd;
+    width: 50%;
+    padding-bottom: 50%;
+    z-index: -1;
+
 }

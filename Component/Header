@@ -1,0 +1,13 @@
+<header class="header">
+    <div class="container">
+        <img src="/img/omnifood-logo.png" alt="" class="logo">
+        <nav class="nav">
+            <ul class="list">
+                <li><a href="#" class="nav__link">Link 1</a></li>
+                <li><a href="#" class="nav__link">Link 1</a></li>
+                <li><a href="#" class="nav__link">Link 1</a></li>
+                <li><a href="#" class="nav__link">Link 1</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
