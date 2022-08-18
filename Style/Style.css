@@ -167,7 +167,7 @@ a {
 
 .section-hero {
     background-color: var(--tints-color);
-    padding: 9.6rem 2rem;
+    padding: 2rem 2rem;
 }
 
 .section-hero .margin__right {
@@ -240,6 +240,9 @@ a {
 }
 
 /*section-how*/
+.section-how {
+    margin: 7rem 0;
+}
 
 .step__image {
     width: 35%;
@@ -274,6 +277,7 @@ a {
 
 
 }
+
 
 .step__box {
     align-items: center;
@@ -312,4 +316,33 @@ a {
     padding-bottom: 50%;
     z-index: -1;
 
+}
+
+/*section featured*/
+
+.featured__heading {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #999;
+}
+
+.logos img {
+    height: 30px;
+    filter: brightness(0);
+    opacity: .5;
+
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.section-featured {
+    margin: 2rem 0;
 }
