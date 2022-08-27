@@ -22,10 +22,16 @@ Link font weight
     --dark-gray: #333;
     --primary-color: #e67e22;
     --tints-color: #fdf2e9;
+    --darker-color: #cf711f;
 }
 
 * {
     box-sizing: border-box;
+}
+
+*:focus {
+    box-shadow: 0 0 0 8px rgba(230, 125, 34, 0.5);
+    outline: 0;
 }
 
 html {
@@ -40,6 +46,10 @@ body {
 }
 
 /*typography*/
+strong {
+    font-weight: 600;
+}
+
 h1 {
     font-size: 5.2rem;
 
@@ -126,13 +136,15 @@ p {
 .list {
     list-style: none;
     padding-left: 0;
+    margin: 0;
+
 }
 
 /*link*/
 
 a {
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 
 }
 
@@ -144,6 +156,10 @@ a {
 
 .grid--1x2 {
     grid-template-columns: 1fr 1fr;
+}
+
+.grid--1x3 {
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 
@@ -345,4 +361,386 @@ a {
 
 .section-featured {
     margin: 2rem 0;
+}
+
+/*section-meal*/
+
+.meals {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.section-meal .container {
+    text-align: center;
+}
+
+
+.meal__description {
+    padding: 1rem 3rem 4rem 3rem;
+}
+
+.meal__box {
+    gap: 6rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.meal__image__box img {
+    width: 100%;
+}
+
+.meal__box li {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    font-size: 1.6rem;
+    padding-bottom: .8rem;
+
+}
+
+.meal__box .icon {
+    color: #cf711f;
+    font-size: 2rem;
+}
+
+.meal__name {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.meal__tag {
+    font-size: 1.2rem;
+    background-color: #51cf66;
+    padding: .4rem .8rem;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.meals__heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--darker-color);
+    text-transform: uppercase;
+}
+
+.recipe__link__box {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.recipe__link:link,
+.recipe__link:visited {
+    color: var(--darker-color);
+    border-bottom: 1px solid currentColor;
+    padding: 3px;
+    font-weight: 600;
+}
+
+.recipe__link:hover,
+.recipe__link:active {
+
+    border-bottom: 1px solid transparent;
+
+
+}
+
+/*testinomials*/
+
+.testinomials img {
+    width: 60px;
+    border-radius: 100px;
+}
+
+.section-testinomials {
+    background-color: var(--tints-color);
+    padding: 2rem;
+    grid-template-columns: 60fr 40fr;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+.section-testinomials .container {
+    grid-template-columns: 60fr 40fr;
+
+}
+
+.section-testinomials .container {
+    gap: 4rem;
+}
+
+.testinomial__container {
+    margin: 0;
+    padding-left: 4rem;
+}
+
+.testinomial__name {
+    font-size: 1.6rem;
+    color: #777;
+}
+
+.testinomial__tag {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: var(--darker-color);
+    font-weight: 600;
+}
+
+.section-testinomials blockquote {
+    color: #6F6f6f;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+
+.gallery {
+    align-self: center;
+}
+
+.gallery img {
+    width: 100%;
+    transition: all .3s;
+}
+
+.gallery.grid {
+    gap: 1.2rem;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+
+}
+
+/*section-pricing*/
+
+
+/*I have set margin to p by default so here I will 
+have to set mannually :( */
+
+
+.plan1,
+.plan2 {
+    padding: 4rem 2rem;
+    width: 75%;
+}
+
+.plan1 {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.plan2 {
+    background-color: var(--tints-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.plan1 {
+    justify-self: end;
+}
+
+.plans.grid {
+    gap: 6rem;
+}
+
+.plan__type,
+.price,
+.plan__text {
+    text-align: center;
+}
+
+
+
+.plan__type {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: var(--darker-color);
+    font-weight: 800;
+    margin: 4rem 0;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #444;
+    margin: 0;
+
+}
+
+.dollar {
+    font-size: 3rem;
+
+}
+
+.plan__text {
+    font-size: 1.6rem;
+    color: #777;
+    margin: 1rem 0;
+
+}
+
+.plan__list {
+    font-size: 1.8rem;
+    margin-top: 5rem;
+    line-height: 1.8;
+}
+
+.plan__list .icon {
+    color: var(--darker-color);
+    margin-right: 1rem;
+}
+
+.plan__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.plan2 header::before {
+    content: "Best value";
+    display: inline-block;
+    color: var(--dark-gray);
+    background-color: var(--darker-color);
+    padding: .6rem 8rem;
+    position: absolute;
+    top: 7%;
+    right: -23%;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transform: rotate(45deg);
+}
+
+/*plan-details*/
+.plan-detail {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 5rem;
+}
+
+/*Features*/
+
+.features.grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.feature__box p {}
+
+.feature__icon {
+    color: var(--darker-color);
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 2rem;
+    background-color: var(--tints-color);
+    padding: 1rem;
+    border-radius: 100px;
+}
+
+.feature__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.feature__text {
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+/*section-cta*/
+
+.section-cta {}
+
+.cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-image: linear-gradient(to left bottom, rgb(230, 125, 34), rgb(238, 164, 100));
+    border-radius: 10px;
+    overflow: hidden;
+
+    color: #5c320e;
+}
+
+.cta__heading {
+    color: #5c320e;
+}
+
+
+.cta__text__box {
+    padding: 4rem;
+}
+
+.cta__text {
+    margin: 0;
+}
+
+
+
+
+.cta__image__box {
+    background-image: linear-gradient(to left bottom, rgba(230, 125, 34, 0.241),
+            rgba(238, 164, 100, 0.2)),
+        url(../img/eating.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cta__form input,
+.cta__form select {
+    outline: none;
+    border: none;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    color: inherit;
+    width: 100%;
+    margin: .6rem 0 2rem 0;
+    background-color: var(--tints-color);
+    border-radius: 9px;
+
+}
+
+.cta__form {
+    margin: 3rem 0 0 0;
+}
+
+.cta__form select {
+    margin-bottom: 0;
+}
+
+.cta__form label {
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: block;
+}
+
+.name__and__email {
+    gap: 4rem;
+}
+
+.select__and__button {
+    gap: 4rem;
+}
+
+.cta__form .btn {
+    align-self: end;
+    border: none;
+    padding: 1.2rem;
+    background-color: #5c320e;
+    font-weight: 600;
+    border-radius: 9px;
+}
+
+.cta :focus {
+    box-shadow: 0 0 0 8px rgba(248, 216, 189, 0.5);
+
 }

@@ -1,0 +1,49 @@
+<section class="section-testinomials grid grid--1x2">
+    <div class="testinomial__box">
+        <div class="testinomial__container">
+            <span class="testinomial__tag">Testinomials</span>
+            <h2>Once you try it, you can't go back</h2>
+        </div>
+
+        <div class="testinomials grid grid--1x2">
+            <figure>
+                <img src="/img/customers/dave.jpg" alt="Testinomials Pictures">
+                <blockquote>Inexpensive, healthy and great-tasting meals, without even having to order manually!
+                    It feels truly magical</blockquote>
+                <span class="testinomial__name">&#45; Dave Bryson</span>
+            </figure>
+            <figure>
+                <img src="/img/customers/ben.jpg" alt="Testinomials Pictures">
+                <blockquote>The AI algorithm is crazy good, it chooses the right meals for me every time. It's
+                    amazing not to worry about food anymore!</blockquote>
+                <span class="testinomial__name">&#45; Ben Hadley</span>
+            </figure>
+            <figure>
+                <img src="/img/customers/steve.jpg" alt="Testinomials Pictures">
+                <blockquote> Omnifood is a life saver! I just started a company, so there's no time for cooking.
+                    I couldn't live without my daily meals now! </blockquote>
+                <span class="testinomial__name">&#45; Steve Miller</span>
+            </figure>
+            <figure>
+                <img src="/img/customers/hannah.jpg" alt="Testinomials Pictures">
+                <blockquote> I got Omnifood for the whole family, and it frees up so much time! Plus, everything
+                    is organic and vegan and without plastic.</blockquote>
+                <span class="testinomial__name">&#45; Hannah Smith</span>
+            </figure>
+        </div>
+    </div>
+    <div class="gallery grid grid--1x3">
+        <img src="/img/gallery/gallery-1.jpg" alt="Gallery">
+        <img src="/img/gallery/gallery-2.jpg" alt="Gallery">
+        <img src="/img/gallery/gallery-3.jpg" alt="Gallery">
+        <img src="/img/gallery/gallery-4.jpg" alt="Gallery">
+        <img src="/img/gallery/gallery-5.jpg" alt="Gallery">
+        <img src="/img/gallery/gallery-6.jpg" alt="Gallery">
+        <img src="/img/gallery/gallery-7.jpg" alt="Gallery">
+        <img src="/img/gallery/gallery-8.jpg" alt="Gallery">
+        <img src="/img/gallery/gallery-9.jpg" alt="Gallery">
+        <img src="/img/gallery/gallery-10.jpg" alt="Gallery">
+        <img src="/img/gallery/gallery-11.jpg" alt="Gallery">
+        <img src="/img/gallery/gallery-12.jpg" alt="Gallery">
+    </div>
+</section>
