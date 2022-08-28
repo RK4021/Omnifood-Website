@@ -44,9 +44,9 @@
         <span class="featured__heading">As featured in</span>
         <div class="logos">
             <img src="/img/logos/business-insider.png" alt="">
+            <img src="/img/logos/the-new-york-times.png" alt="">
             <img src="/img/logos/forbes.png" alt="">
             <img src="/img/logos/techcrunch.png" alt="">
-            <img src="/img/logos/the-new-york-times.png" alt="">
             <img src="/img/logos/usa-today.png" alt="">
         </div>
     </div>
@@ -60,7 +60,7 @@
         <h2 class="secondry__heading">Your daily dose of health in simple 3 steps</h2>
 
         <div class="steps grid">
-            <div class="step__box grid grid--1x2">
+            <div class="step__box grid grid--2x1">
                 <div class="step__text__box">
                     <p class="step__number">01</p>
                     <h3 class="tertiary__heading">Tell us what you like (and what not)</h3>
@@ -71,7 +71,7 @@
                 </div>
                 <div class="step__image__box"><img src="/img/app/app-screen-1.png" alt="" class="step__image"></div>
             </div>
-            <div class="step__box grid grid--1x2">
+            <div class="step__box grid grid--2x1">
                 <div class="step__text__box">
                     <p class="step__number">02</p>
                     <h3 class="tertiary__heading">Approve your weekly meal plan</h3>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="step__image__box"><img src="/img/app/app-screen-2.png" alt="" class="step__image"></div>
             </div>
-            <div class="step__box grid grid--1x2">
+            <div class="step__box grid grid--2x1">
                 <div class="step__text__box">
                     <p class="step__number">03</p>
                     <h3 class="tertiary__heading">Receive meals at convenient time</h3>
@@ -189,53 +189,54 @@
     </div>
 </section>
 
-<section class="section-testinomials grid grid--1x2">
-    <div class="testinomial__box">
-        <div class="testinomial__container">
-            <span class="testinomial__tag">Testinomials</span>
-            <h2>Once you try it, you can't go back</h2>
+<section class="section-testinomials">
+    <div class="container  grid grid--1x2">
+        <div class="testinomial__box">
+            <div class="testinomial__container">
+                <span class="testinomial__tag">Testinomials</span>
+                <h2>Once you try it, you can't go back</h2>
+            </div>
+            <div class="testinomials grid grid--1x2">
+                <figure>
+                    <img src="/img/customers/dave.jpg" alt="Testinomials Pictures">
+                    <blockquote>Inexpensive, healthy and great-tasting meals, without even having to order manually!
+                        It feels truly magical</blockquote>
+                    <span class="testinomial__name">&#45; Dave Bryson</span>
+                </figure>
+                <figure>
+                    <img src="/img/customers/ben.jpg" alt="Testinomials Pictures">
+                    <blockquote>The AI algorithm is crazy good, it chooses the right meals for me every time. It's
+                        amazing not to worry about food anymore!</blockquote>
+                    <span class="testinomial__name">&#45; Ben Hadley</span>
+                </figure>
+                <figure>
+                    <img src="/img/customers/steve.jpg" alt="Testinomials Pictures">
+                    <blockquote> Omnifood is a life saver! I just started a company, so there's no time for cooking.
+                        I couldn't live without my daily meals now! </blockquote>
+                    <span class="testinomial__name">&#45; Steve Miller</span>
+                </figure>
+                <figure>
+                    <img src="/img/customers/hannah.jpg" alt="Testinomials Pictures">
+                    <blockquote> I got Omnifood for the whole family, and it frees up so much time! Plus, everything
+                        is organic and vegan and without plastic.</blockquote>
+                    <span class="testinomial__name">&#45; Hannah Smith</span>
+                </figure>
+            </div>
         </div>
-
-        <div class="testinomials grid grid--1x2">
-            <figure>
-                <img src="/img/customers/dave.jpg" alt="Testinomials Pictures">
-                <blockquote>Inexpensive, healthy and great-tasting meals, without even having to order manually!
-                    It feels truly magical</blockquote>
-                <span class="testinomial__name">&#45; Dave Bryson</span>
-            </figure>
-            <figure>
-                <img src="/img/customers/ben.jpg" alt="Testinomials Pictures">
-                <blockquote>The AI algorithm is crazy good, it chooses the right meals for me every time. It's
-                    amazing not to worry about food anymore!</blockquote>
-                <span class="testinomial__name">&#45; Ben Hadley</span>
-            </figure>
-            <figure>
-                <img src="/img/customers/steve.jpg" alt="Testinomials Pictures">
-                <blockquote> Omnifood is a life saver! I just started a company, so there's no time for cooking.
-                    I couldn't live without my daily meals now! </blockquote>
-                <span class="testinomial__name">&#45; Steve Miller</span>
-            </figure>
-            <figure>
-                <img src="/img/customers/hannah.jpg" alt="Testinomials Pictures">
-                <blockquote> I got Omnifood for the whole family, and it frees up so much time! Plus, everything
-                    is organic and vegan and without plastic.</blockquote>
-                <span class="testinomial__name">&#45; Hannah Smith</span>
-            </figure>
+        <div class="gallery grid grid--1x3">
+            <img src="/img/gallery/gallery-1.jpg" alt="Gallery">
+            <img src="/img/gallery/gallery-2.jpg" alt="Gallery">
+            <img src="/img/gallery/gallery-3.jpg" alt="Gallery">
+            <img src="/img/gallery/gallery-4.jpg" alt="Gallery">
+            <img src="/img/gallery/gallery-5.jpg" alt="Gallery">
+            <img src="/img/gallery/gallery-6.jpg" alt="Gallery">
+            <img src="/img/gallery/gallery-7.jpg" alt="Gallery">
+            <img src="/img/gallery/gallery-8.jpg" alt="Gallery">
+            <img src="/img/gallery/gallery-9.jpg" alt="Gallery">
+            <img src="/img/gallery/gallery-10.jpg" alt="Gallery">
+            <img src="/img/gallery/gallery-11.jpg" alt="Gallery">
+            <img src="/img/gallery/gallery-12.jpg" alt="Gallery">
         </div>
-    </div>
-    <div class="gallery grid grid--1x3">
-        <img src="/img/gallery/gallery-1.jpg" alt="Gallery">
-        <img src="/img/gallery/gallery-2.jpg" alt="Gallery">
-        <img src="/img/gallery/gallery-3.jpg" alt="Gallery">
-        <img src="/img/gallery/gallery-4.jpg" alt="Gallery">
-        <img src="/img/gallery/gallery-5.jpg" alt="Gallery">
-        <img src="/img/gallery/gallery-6.jpg" alt="Gallery">
-        <img src="/img/gallery/gallery-7.jpg" alt="Gallery">
-        <img src="/img/gallery/gallery-8.jpg" alt="Gallery">
-        <img src="/img/gallery/gallery-9.jpg" alt="Gallery">
-        <img src="/img/gallery/gallery-10.jpg" alt="Gallery">
-        <img src="/img/gallery/gallery-11.jpg" alt="Gallery">
-        <img src="/img/gallery/gallery-12.jpg" alt="Gallery">
     </div>
 </section>
 <section class="section-pricing">
@@ -383,5 +384,81 @@
     </div>
 </section>
 
+<footer class="footer">
+    <div class="container grid">
+        <div class="logo__box ">
+            <a href="#"><img src="/img/omnifood-logo.png" alt="" class="logo"></a>
+            <ul class="list">
+                <li><a href="#">
+                        <ion-icon name="logo-facebook" class="icon"></ion-icon>
+                    </a></li>
+                <li><a href="#">
+                        <ion-icon name="logo-instagram" class="icon"></ion-icon>
+                    </a></li>
+                <li><a href="#">
+                        <ion-icon name="logo-twitter" class="icon"></ion-icon>
+                    </a></li>
+            </ul>
+            <p class="copy">Copyright &copy; 2027 by Omnifood Inc. All right riserved.</p>
+        </div>
+        <address class="collapsible">
+            <div class="heading__and__chevron">
+                <p class="heading">Contact us</p>
+                <ion-icon name="chevron-forward-outline" class="chevron__icon chevron__expanded"></ion-icon>
+            </div>
+            <div class="box__expanded">
+                <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+                <div>
+                    <a href="tel:415-201-6370">415-201-6370</a>
+                    <a href="mailto:hello@omnifood.com">hello@omnifood.com</a>
+                </div>
+            </div>
+        </address>
+
+        <nav class="account collapsible ">
+            <div class="heading__and__chevron">
+                <div class="heading">Account</div>
+                <ion-icon name="chevron-forward-outline" class="chevron__icon chevron__expanded"></ion-icon>
+            </div>
+
+            <ul class="list box__expanded ">
+
+                <li> <a href="#">Create account</a> </li>
+                <li> <a href="#">Sign in</a> </li>
+                <li> <a href="#">iOS app</a> </li>
+                <li> <a href="#"> Android app</a> </li>
+            </ul>
+        </nav>
+
+        <nav class="company collapsible">
+            <div class="heading__and__chevron">
+                <div class="heading">Company</div>
+                <ion-icon name="chevron-forward-outline" class="chevron__icon chevron__expanded"></ion-icon>
+            </div>
+
+            <ul class=" list box__expanded ">
+                <li> <a href="#">About Omnifood </a> </li>
+                <li> <a href="#">For Business</a> </li>
+                <li> <a href="#">Cooking partners</a> </li>
+                <li> <a href="#">Careers</a> </li>
+            </ul>
+        </nav>
+        <nav class="Resources collapsible">
+            <div class="heading__and__chevron">
+                <div class="heading">Resources</div>
+                <ion-icon name="chevron-forward-outline" class="chevron__icon chevron__expanded"></ion-icon>
+            </div>
+
+            <ul class=" list box__expanded collapsible">
+                <li> <a href="#">Recipe directory</a> </li>
+                <li> <a href="#">Help center</a> </li>
+                <li> <a href="#">Privacy & terms</a> </li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<script src="/main.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -1,0 +1,63 @@
+<div class="section-pricing">
+    <div class="container">
+        <h2 class="heading">Eating well without breaking the bank</h2>
+
+        <div class="plans grid grid--1x2">
+            <div class="plan1">
+                <header>
+                    <p class="plan__type">starter</p>
+                    <p class="price"><span class="dollar">$</span>399</p>
+                    <p class="plan__text">per month. That's just $13 per meal</p>
+                </header>
+
+                <ul class="plan__list list">
+                    <li class="price__list__item">
+                        <ion-icon name="checkmark-outline" class="icon"></ion-icon>1 meal per day
+                    </li>
+                    <li class="price__list__item">
+                        <ion-icon name="checkmark-outline" class="icon"></ion-icon>Order from 11am to 9pm
+                    </li>
+                    <li class="price__list__item">
+                        <ion-icon name="checkmark-outline" class="icon"></ion-icon>Delivery is free
+                    </li>
+                    <li class="price__list__item">
+                        <ion-icon name="close-outline" class="icon"></ion-icon>
+                        </ion-icon>Get access to latest recipes
+                    </li>
+                </ul>
+
+                <div class="plan__button"><a href="#" class="btn btn--full">Start eating well</a></div>
+
+
+            </div>
+            <div class="plan2">
+                <header>
+                    <p class="plan__type">Complete</p>
+                    <p class="price"><span class="dollar">$</span>649</p>
+                    <p class="plan__text">per month. That's just $11 per meal</p>
+                </header>
+
+                <ul class="plan__list list">
+                    <li class="price__list__item">
+                        <ion-icon name="checkmark-outline" class="icon"></ion-icon><strong>2</strong> meals per day
+                    </li>
+                    <li class="price__list__item">
+                        <ion-icon name="checkmark-outline" class="icon"></ion-icon>Order <strong>24/7</strong>
+                    </li>
+                    <li class="price__list__item">
+                        <ion-icon name="checkmark-outline" class="icon"></ion-icon>Delivery is free
+                    </li>
+                    <li class="price__list__item">
+                        <ion-icon name="checkmark-outline" class="icon"></ion-icon>Get access to latest recipes
+                    </li>
+                </ul>
+
+                <div class="plan__button"><a href="#" class="btn btn--full">Start eating well</a></div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>

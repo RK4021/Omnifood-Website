@@ -1,0 +1,56 @@
+<footer class="footer">
+    <div class="container grid">
+        <div class="logo__box">
+            <a href="#"><img src="/img/omnifood-logo.png" alt="" class="logo"></a>
+            <ul class="list">
+                <li><a href="#">
+                        <ion-icon name="logo-facebook" class="icon"></ion-icon>
+                    </a></li>
+                <li><a href="#">
+                        <ion-icon name="logo-instagram" class="icon"></ion-icon>
+                    </a></li>
+                <li><a href="#">
+                        <ion-icon name="logo-twitter" class="icon"></ion-icon>
+                    </a></li>
+            </ul>
+            <p class="copy">Copyright &copy; 2027 by Omnifood Inc. All right riserved.</p>
+        </div>
+        <address>
+            <p class="heading">Contact us</p>
+            <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+            <div>
+                <a href="tel:415-201-6370">415-201-6370</a>
+                <a href="mailto:hello@omnifood.com">hello@omnifood.com</a>
+            </div>
+        </address>
+
+        <nav>
+            <ul class="account list">
+                <div class="heading">Account</div>
+                <li> <a href="#">Create account</a> </li>
+                <li> <a href="#">Sign in</a> </li>
+                <li> <a href="#">iOS app</a> </li>
+                <li> <a href="#"> Android app</a> </li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="company list">
+                <div class="heading">Company</div>
+                <li> <a href="#">About Omnifood </a> </li>
+                <li> <a href="#">For Business</a> </li>
+                <li> <a href="#">Cooking partners</a> </li>
+                <li> <a href="#">Careers</a> </li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="Resources list">
+                <div class="heading">Resources</div>
+                <li> <a href="#">Recipe directory</a> </li>
+                <li> <a href="#">Help center</a> </li>
+                <li> <a href="#">Privacy & terms</a> </li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>

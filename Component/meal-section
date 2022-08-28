@@ -1,0 +1,92 @@
+<section class="section-meal">
+    <div class="container">
+        <span class="meals__heading">Meals</span>
+        <h2 class="meal__heading">Omnifood AI chooses from 5,000+ recipes
+
+        </h2>
+        <div class="meal__box grid grid--1x3">
+            <div class="meals">
+                <div class="meal__image__box"><img src="/img/meals/meal-1.jpg" alt="Meal Image"></div>
+                <div class="meal__description">
+                    <span class="meal__tag">Vegetarian</span>
+                    <h3 class="meal__name">Japanese Gyozas</h3>
+                    <ul class="list">
+                        <li>
+                            <ion-icon name="flame-outline" class="icon"></ion-icon><span><strong>650</strong>
+                                Calories</span>
+                        </li>
+                        <li>
+                            <ion-icon name="restaurant-outline" class="icon"></ion-icon><span>NutriScore
+                                <strong>74</strong></span>
+                        </li>
+                        <li>
+                            <ion-icon name="star-outline" class="icon"></ion-icon><span><strong>4.9</strong> rating
+                                (537)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="meals">
+                <div class="meal__image__box"><img src="/img/meals/meal-2.jpg" alt="Meal Image"></div>
+                <div class="meal__description">
+                    <span class="meal__tag">Vegan and Paleo</span>
+                    <h3 class="meal__name">Avocado Salad</h3>
+                    <ul class="list">
+                        <li>
+                            <ion-icon name="flame-outline" class="icon"></ion-icon><span><strong>400</strong>
+                                Calories</span>
+                        </li>
+                        <li>
+                            <ion-icon name="restaurant-outline" class="icon"></ion-icon><span>NutriScore
+                                <strong>92</strong></span>
+                        </li>
+                        <li>
+                            <ion-icon name="star-outline" class="icon"></ion-icon><span><strong>4.8</strong> rating
+                                (441)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="meal__types">
+                <h3 class="heading">Works with any diet:</h3>
+                <ul class="list">
+                    <li class="meal__type">
+                        <ion-icon name="checkmark-outline" class="icon"></ion-icon>Vegetarian
+                    </li>
+                    <li class="meal__type">
+                        <ion-icon name="checkmark-outline" class="icon"></ion-icon>Vegan
+                    </li>
+                    <li class="meal__type">
+                        <ion-icon name="checkmark-outline" class="icon"></ion-icon>Pescatarian
+                    </li>
+                    <li class="meal__type">
+                        <ion-icon name="checkmark-outline" class="icon"></ion-icon>Gluten-free
+                    </li>
+                    <li class="meal__type">
+                        <ion-icon name="checkmark-outline" class="icon"></ion-icon>Lactos-free
+                    </li>
+                    <li class="meal__type">
+                        <ion-icon name="checkmark-outline" class="icon"></ion-icon>Keto
+                    </li>
+                    <li class="meal__type">
+                        <ion-icon name="checkmark-outline" class="icon"></ion-icon>Paleo
+                    </li>
+                    <li class="meal__type">
+                        <ion-icon name="checkmark-outline" class="icon"></ion-icon>Low-FODMAP
+                    </li>
+                    <li class="meal__type">
+                        <ion-icon name="checkmark-outline" class="icon"></ion-icon>Kid-friendly
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </div>
+
+        <div class="recipe__link__box"><a href="#" class="recipe__link">See all recipes &rarr;</a></div>
+
+
+    </div>
+</section>
