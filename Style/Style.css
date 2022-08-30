@@ -11,11 +11,12 @@ Link font size
 Link font weight
 -- 600
 
-
-
-
+/*
+font size -> 10 12 14 16 18 20 24 30 36 44 52 62 74 86 98 
 
 */
+
+
 
 :root {
     --primary-background-button: navy;
@@ -36,6 +37,27 @@ Link font weight
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+
+@media screen and (max-width: 767px) {
+
+    html {
+        font-size: 50%;
+        overflow-x: hidden;
+
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+    html {
+
+        font-size: 56.25%;
+
+    }
+
 }
 
 body {
@@ -43,6 +65,8 @@ body {
     font-weight: 400;
     color: #555;
     font-size: 2rem;
+    overflow-x: hidden;
+
 }
 
 /*typography*/
@@ -51,23 +75,30 @@ strong {
 }
 
 h1 {
-    font-size: 5.2rem;
+    font-size: 3.6rem;
 
 }
 
 h2 {
-    font-size: 4.2rem;
+    font-size: 3rem;
 }
 
 h3 {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
 }
+
+
+
+
+
+
+
 
 h1,
 h2,
 h3 {
     margin: 0;
-    margin-bottom: 3.2rem;
+    margin-bottom: 2.2rem;
     color: var(--dark-gray);
     font-weight: 700;
     letter-spacing: -.5px;
@@ -77,6 +108,44 @@ p {
     margin-bottom: 4.8rem;
 }
 
+@media screen and (min-width: 767px) {
+
+    h1 {
+        font-size: 4.4rem;
+
+    }
+
+    h2 {
+        font-size: 3.6rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    h1 {
+        font-size: 5rem;
+
+    }
+
+    h2 {
+        font-size: 4.4rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+
+
+
+}
 
 /*container*/
 .container {
@@ -177,14 +246,17 @@ a {
 
 .hero__img {
     width: 100%;
+    max-width: 54rem;
+    align-self: center;
 }
 
 .hero {
-    gap: 9.6rem;
+    gap: 3.4rem;
 }
 
 .hero__description {
     line-height: 1.6;
+    margin-bottom: 3rem;
 }
 
 .hero__text__box {
@@ -209,8 +281,8 @@ a {
 }
 
 .customer__pics img {
-    height: 30px;
-    width: 30px;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
     margin-right: -15px;
     border: 2px solid #fff;
@@ -227,7 +299,12 @@ a {
     font-weight: 800;
 }
 
-@media screen and (max-width: 768px) {
+.hero .btn--outline {
+    margin-top: 0;
+}
+
+
+@media screen and (max-width: 767px) {
 
     .section-hero .hero {
         text-align: center;
@@ -235,9 +312,29 @@ a {
 
     .meal__delivered {
         display: grid;
-        ;
         justify-content: center;
     }
+
+    .hero .btn--outline {
+        margin-top: 2rem;
+    }
+
+    .hero .btn--full {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .hero {
+        grid-template-columns: 60fr 40fr;
+    }
+
+    .hero__img__box {
+        display: flex;
+        align-items: center;
+    }
+
 }
 
 /*Header*/
@@ -245,6 +342,8 @@ a {
 .header {
     background-color: var(--tints-color);
     padding: 2rem 0;
+    pointer-events: none;
+
 }
 
 .header .container {
@@ -254,14 +353,25 @@ a {
 
 }
 
+
+
 .logo {
-    height: 30px;
+    height: 2.4rem;
 }
 
 .nav .list {
     display: flex;
     gap: 3rem;
+    align-items: center;
+
+
 }
+
+.list li {
+    pointer-events: initial;
+}
+
+
 
 .nav__link:link,
 .nav__link:visited {
@@ -269,6 +379,11 @@ a {
     font-weight: 600;
     transition: all .3s;
 
+
+}
+
+.nav .btn {
+    padding: 1rem 2rem;
 }
 
 .nav__link:hover,
@@ -276,11 +391,93 @@ a {
     color: #cf711f;
 }
 
-@media screen and (max-width: 765px) {
-    .header .container {
-        display: grid;
-        justify-content: center;
+.nav__link.btn:hover {
+    color: #fff;
+}
+
+.nav__icon .icon {
+    font-size: 3rem;
+    color: #333;
+    pointer-events: initial;
+
+}
+
+.nav__icon {
+    display: none;
+}
+
+
+
+
+/*for mobile */
+
+@media screen and (max-width: 767px) {
+
+
+    .nav {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.9);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transition: all .5s;
+        transform: translateX(100%);
+
+
+
     }
+
+    .collapsible--expanded .nav {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+
+
+    }
+
+
+
+    .nav__icon [name="close-outline"] {
+        display: none;
+    }
+
+
+    .nav .list {
+        display: flex;
+        gap: 3rem;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav__link {
+        font-size: 2.4rem;
+    }
+
+    .nav__icon {
+        display: block;
+    }
+
+    .collapsible--expanded .nav__icon [name="close-outline"] {
+        display: block;
+    }
+
+    .collapsible--expanded .nav__icon [name="menu-outline"] {
+        display: none;
+    }
+
+
+}
+
+
+/*
+@media screen and (max-width: 765px) {
+
 
     .header .nav {
         margin-top: 1rem;
@@ -290,6 +487,12 @@ a {
         justify-self: center;
     }
 }
+
+*/
+
+
+
+
 
 /*section-how*/
 .section-how {
@@ -335,7 +538,7 @@ a {
 }
 
 .steps {
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 
 .steps.grid {
@@ -401,7 +604,7 @@ a {
 }
 
 .logos img {
-    height: 30px;
+    height: 2.4rem;
     filter: brightness(0);
     opacity: .5;
 
@@ -425,13 +628,10 @@ a {
     }
 
     .logos img {
+        height: 1.8rem;
         justify-self: center;
     }
 
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
     .logos {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -442,9 +642,19 @@ a {
     .logos img:nth-child(2),
     .logos img:nth-child(3) {
         grid-column: auto / span 2;
-        justify-self: center;
 
     }
+
+    .logos img:nth-child(1) {
+        justify-self: start;
+    }
+
+    .logos img:nth-child(2) {
+        justify-self: center;
+    }
+
+
+
 
     .logos img {
 
@@ -458,9 +668,26 @@ a {
     }
 
 
+}
+
+@media screen and (min-width: 768px) {
+    .logos {
+        grid-template-columns: repeat(6, 1fr);
+    }
 
 
 }
+
+@media screen and (min-width: 425px) {
+
+    .logos img:nth-child(1),
+    .logos img:nth-child(3) {
+        justify-self: center;
+    }
+
+}
+
+
 
 /*section-meal*/
 
@@ -473,12 +700,10 @@ a {
 }
 
 .meal__box {
+    grid-template-columns: 35fr 35fr 30fr;
     gap: 2rem;
 }
 
-.section-meal .container {
-    text-align: center;
-}
 
 
 .meal__description {
@@ -549,10 +774,24 @@ a {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 685px) {
+
+    .meal__box {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
     .meal__types .list li {
         max-width: 150px;
         margin: 0 auto;
+    }
+
+    .section-meal {
+        text-align: center;
+    }
+
+    .meal__description {
+        text-align: left;
     }
 }
 
@@ -575,10 +814,11 @@ a {
 
 }
 
-.testinomial__container {
-    margin: 0;
-    padding-left: 4rem;
+.testinomials {
+    gap: 2.4rem;
 }
+
+
 
 .testinomial__name {
     font-size: 1.6rem;
@@ -597,6 +837,10 @@ a {
     margin: 1rem 0;
     font-size: 1.8rem;
     line-height: 1.6;
+}
+
+figure {
+    margin: 0;
 }
 
 
@@ -663,7 +907,7 @@ have to set mannually :( */
     width: 75%;
     justify-self: center;
     width: 100%;
-    max-width: 335px;
+    max-width: 35rem;
 
 }
 
@@ -756,7 +1000,7 @@ have to set mannually :( */
     transform: rotate(45deg);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 650px) {
     .plans {
         grid-template-columns: 1fr 1fr;
     }
@@ -769,6 +1013,9 @@ have to set mannually :( */
         justify-self: start;
     }
 
+    .plans.grid {
+        gap: 4rem;
+    }
 
 }
 
@@ -817,7 +1064,7 @@ have to set mannually :( */
     margin-top: 0;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:650px) {
     .features {
         grid-template-columns: 1fr 1fr;
     }
@@ -841,17 +1088,20 @@ have to set mannually :( */
 /*section-cta*/
 
 .section-cta .container {
-    padding: 0;
+    padding: 2rem;
 }
 
 .cta {
     display: grid;
-    grid-template-rows: 300px 600px;
+    grid-template-rows: 300px 530px;
     background-image: linear-gradient(to left bottom, rgb(230, 125, 34), rgb(238, 164, 100));
     border-radius: 10px;
     overflow: hidden;
 
     color: #5c320e;
+
+    max-width: 45rem;
+    margin: 0 auto;
 }
 
 
@@ -937,11 +1187,12 @@ have to set mannually :( */
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 650px) {
     .cta {
         grid-template-columns: 55fr 45fr;
         grid-template-rows: auto;
         gap: 2rem;
+        max-width: 100%;
 
     }
 
@@ -1070,12 +1321,6 @@ address {
     transform: scale(1.5);
 }
 
-
-.footer a:hover {
-    color: #e67e22;
-    transform: translateY(-5rem)
-}
-
 address {
     display: flex;
     flex-direction: column;
@@ -1109,20 +1354,25 @@ address {
     transform: rotate(90deg);
 }
 
-@media screen and (max-width:1023px) {
-
-    .footer .container .logo__box {
-        order: 10;
-        margin-top: 3rem;
-    }
-
+.footer .container .logo__box {
+    order: 10;
+    margin-top: 3rem;
 }
 
-@media screen and (min-width: 1024px) {
+
+
+@media screen and (min-width: 768px) {
+
+    .footer .container .logo__box {
+        order: -1;
+        margin-top: 0;
+
+    }
+
     .footer .container {
         justify-content: start;
-        grid-template-columns: 220px 200px 140px 140px 140px;
-        gap: 4rem;
+        grid-template-columns: 26fr 26fr 16fr 16fr 16fr;
+        gap: 2rem;
         justify-content: center;
     }
 

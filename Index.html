@@ -5,28 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.png">
     <link rel="stylesheet" href="/Style/Normalize.css">
-    <title>Document</title>
+    <title>Omnifood &mdash; Never cook again</title>
     <link rel="stylesheet" href="/Style/Normalize.css">
     <link rel="stylesheet" href="/Style/Style.css">
-    <title>Document</title>
 </head>
 
 <body>
-
     <header class="header">
-        <div class="container">
+        <div class="container collapsible">
             <img src="/img/omnifood-logo.png" alt="" class="logo">
             <nav class="nav">
+
                 <ul class="list">
-                    <li><a href="#" class="nav__link">Link 1</a></li>
-                    <li><a href="#" class="nav__link">Link 1</a></li>
-                    <li><a href="#" class="nav__link">Link 1</a></li>
-                    <li><a href="#" class="nav__link">Link 1</a></li>
+                    <li><a href="#how" class="nav__link">How it Works</a></li>
+                    <li><a href="#meals" class="nav__link">Meals</a></li>
+                    <li><a href="#testinomials" class="nav__link">Testinomials</a></li>
+                    <li><a href="#pricing" class="nav__link">Pricing</a></li>
+                    <li><a href="#cta" class="nav__link btn btn--full">Try for free</a></li>
                 </ul>
+
+
             </nav>
+            <div class="nav__icon">
+                <ion-icon name="menu-outline" class="icon"></ion-icon>
+                <ion-icon name="close-outline" class="icon"></ion-icon>
+
+            </div>
         </div>
     </header>
+
     <section class="section-hero">
         <div class="hero container grid grid--2x1">
             <div class="hero__text__box">
@@ -35,8 +44,8 @@
                     healthy
                     again. Tailored to your personal tastes and nutritional needs. </p>
 
-                <a href="#" class="btn btn--full margin__right">Start eating well</a>
-                <a href="#" class="btn btn--outline">Learn more &rarr;</a>
+                <a href="#cta" class="btn btn--full margin__right">Start eating well</a>
+                <a href="#how" class="btn btn--outline">Learn more &rarr;</a>
 
                 <div class="meal__delivered">
                     <div class="customer__pics">
@@ -67,10 +76,8 @@
             </div>
         </div>
 
-
-
     </section>
-    <section class="section-how">
+    <section class="section-how" id="how">
         <div class="container">
             <span class="subheading">How it Works</span>
             <h2 class="secondry__heading">Your daily dose of health in simple 3 steps</h2>
@@ -112,7 +119,7 @@
 
     </section>
 
-    <section class="section-meal">
+    <section class="section-meal" id="meals">
         <div class="container">
             <span class="meals__heading">Meals</span>
             <h2 class="meal__heading">Omnifood AI chooses from 5,000+ recipes
@@ -205,7 +212,7 @@
         </div>
     </section>
 
-    <section class="section-testinomials">
+    <section class="section-testinomials" id="testinomials">
         <div class="container  grid grid--1x2">
             <div class="testinomial__box">
                 <div class="testinomial__container">
@@ -255,7 +262,7 @@
             </div>
         </div>
     </section>
-    <section class="section-pricing">
+    <section class="section-pricing" id="pricing">
         <div class="container">
             <h2 class="heading">Eating well without breaking the bank</h2>
 
@@ -359,7 +366,7 @@
         </div>
     </section>
 
-    <section class="section-cta">
+    <section class="section-cta" id="cta">
         <div class="container ">
             <div class="cta">
                 <div class="cta__text__box">
@@ -415,7 +422,7 @@
                             <ion-icon name="logo-twitter" class="icon"></ion-icon>
                         </a></li>
                 </ul>
-                <p class="copy">Copyright &copy; 2027 by Omnifood Inc. All right riserved.</p>
+                <p class="copy">Copyright &copy; <span class="year">2027</span> by Omnifood Inc. All right riserved.</p>
             </div>
             <address class="collapsible">
                 <div class="heading__and__chevron">
@@ -474,11 +481,9 @@
 
         </div>
     </footer>
-
     <script src="/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
